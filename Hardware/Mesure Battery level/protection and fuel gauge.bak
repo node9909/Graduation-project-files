@@ -1,0 +1,663 @@
+EESchema Schematic File Version 4
+LIBS:POWER_SUPPLY_NEW_without_so_may_modules-cache
+EELAYER 26 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Custom_parts_by_Oliver:AP9101C U2
+U 1 1 5D4A828D
+P 4200 2650
+F 0 "U2" H 4175 2965 50  0000 C CNN
+F 1 "AP9101C" H 4175 2874 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 3900 3350 50  0001 C CNN
+F 3 "" H 3900 3350 50  0001 C CNN
+	1    4200 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D4A830A
+P 3025 2650
+F 0 "R1" V 2818 2650 50  0000 C CNN
+F 1 "330R" V 2909 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2955 2650 50  0001 C CNN
+F 3 "~" H 3025 2650 50  0001 C CNN
+	1    3025 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5D4A8376
+P 3325 3025
+F 0 "C1" H 3440 3071 50  0000 L CNN
+F 1 "100nF" H 3440 2980 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3363 2875 50  0001 C CNN
+F 3 "~" H 3325 3025 50  0001 C CNN
+	1    3325 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5D4A847D
+P 4950 3125
+F 0 "R2" H 4880 3079 50  0000 R CNN
+F 1 "2.7K" H 4880 3170 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4880 3125 50  0001 C CNN
+F 3 "~" H 4950 3125 50  0001 C CNN
+	1    4950 3125
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3325 2875 3325 2650
+Wire Wire Line
+	3175 2650 3325 2650
+Connection ~ 3325 2650
+Wire Wire Line
+	3325 2650 3750 2650
+Wire Wire Line
+	3750 2850 3600 2850
+Wire Wire Line
+	3600 2850 3600 3450
+Wire Wire Line
+	3325 3175 3325 3450
+Connection ~ 3325 3450
+Wire Wire Line
+	3325 3450 3600 3450
+Wire Wire Line
+	4950 3450 4950 3275
+Wire Wire Line
+	4600 2650 4950 2650
+Wire Wire Line
+	4950 2650 4950 2975
+Connection ~ 2525 2650
+$Comp
+L Device:R R3
+U 1 1 5D4A9EBF
+P 8625 2275
+F 0 "R3" H 8695 2321 50  0000 L CNN
+F 1 "500R" H 8695 2230 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8555 2275 50  0001 C CNN
+F 3 "~" H 8625 2275 50  0001 C CNN
+	1    8625 2275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8625 3000 8625 2425
+$Comp
+L Device:C C2
+U 1 1 5D4AACBE
+P 8625 3325
+F 0 "C2" H 8740 3371 50  0000 L CNN
+F 1 "100nF" H 8740 3280 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8663 3175 50  0001 C CNN
+F 3 "~" H 8625 3325 50  0001 C CNN
+	1    8625 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D1
+U 1 1 5D4AAD6E
+P 8975 3300
+F 0 "D1" V 8929 3379 50  0000 L CNN
+F 1 "D_Schottky" V 9020 3379 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 8975 3300 50  0001 C CNN
+F 3 "~" H 8975 3300 50  0001 C CNN
+	1    8975 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8625 3175 8625 3000
+Connection ~ 8625 3000
+Wire Wire Line
+	8625 3000 8975 3000
+Wire Wire Line
+	8975 3575 8975 3450
+Wire Wire Line
+	8625 3475 8625 3575
+Connection ~ 8975 3575
+Wire Wire Line
+	8975 3575 9125 3575
+$Comp
+L Device:R R6
+U 1 1 5D4ACC9F
+P 9950 3575
+F 0 "R6" V 9743 3575 50  0000 C CNN
+F 1 "Rsns" V 9834 3575 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 9880 3575 50  0001 C CNN
+F 3 "~" H 9950 3575 50  0001 C CNN
+	1    9950 3575
+	0    1    1    0   
+$EndComp
+Connection ~ 9250 3575
+$Comp
+L Device:R R8
+U 1 1 5D4AD93B
+P 11125 2850
+F 0 "R8" V 10918 2850 50  0000 C CNN
+F 1 "150R" V 11009 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11055 2850 50  0001 C CNN
+F 3 "~" H 11125 2850 50  0001 C CNN
+	1    11125 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5D4AD9A4
+P 11125 3000
+F 0 "R9" V 11300 3000 50  0000 C CNN
+F 1 "150R" V 11225 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11055 3000 50  0001 C CNN
+F 3 "~" H 11125 3000 50  0001 C CNN
+	1    11125 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D4
+U 1 1 5D4AD9DE
+P 10650 3200
+F 0 "D4" V 10604 3279 50  0000 L CNN
+F 1 "D_Schottky" V 10695 3279 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 10650 3200 50  0001 C CNN
+F 3 "~" H 10650 3200 50  0001 C CNN
+	1    10650 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D5
+U 1 1 5D4ADA14
+P 10850 3200
+F 0 "D5" V 10804 3279 50  0000 L CNN
+F 1 "D_Schottky" V 10895 3279 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 10850 3200 50  0001 C CNN
+F 3 "~" H 10850 3200 50  0001 C CNN
+	1    10850 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10975 3000 10850 3000
+Wire Wire Line
+	10650 3050 10650 2850
+Wire Wire Line
+	10350 2850 10650 2850
+Connection ~ 10650 2850
+Wire Wire Line
+	10650 2850 10975 2850
+Wire Wire Line
+	10850 3050 10850 3000
+Connection ~ 10850 3000
+Wire Wire Line
+	10850 3000 10350 3000
+Wire Wire Line
+	10650 3350 10650 3575
+Wire Wire Line
+	10850 3350 10850 3575
+Connection ~ 10650 3575
+Wire Wire Line
+	10650 3575 10850 3575
+Connection ~ 10850 3575
+Wire Wire Line
+	8625 2125 8625 1950
+Connection ~ 8625 3575
+Wire Wire Line
+	8625 3575 8975 3575
+Connection ~ 8625 1950
+Wire Wire Line
+	11275 3000 11550 3000
+Wire Wire Line
+	11275 2850 11550 2850
+Text Label 11550 2850 0    50   ~ 0
+SCK
+Text Label 11550 3000 0    50   ~ 0
+SDO
+Wire Wire Line
+	2525 2650 2875 2650
+Text Label 5750 3450 0    50   ~ 0
+PACK-
+Text Label 7475 3575 2    50   ~ 0
+PACK-
+Text Label 5675 2175 0    50   ~ 0
+PACK+
+Text Label 7475 1950 2    50   ~ 0
+PACK+
+$Comp
+L Afstuderen-cache:power_PWR_FLAG #FLG0101
+U 1 1 5DA1D78D
+P 2525 1850
+F 0 "#FLG0101" H 2525 1925 50  0001 C CNN
+F 1 "power_PWR_FLAG" H 2525 2024 50  0000 C CNN
+F 2 "" H 2525 1850 50  0001 C CNN
+F 3 "" H 2525 1850 50  0001 C CNN
+	1    2525 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 2525 2175
+$Comp
+L SparkFun-Connectors:CONN_01 J12
+U 1 1 5DD3BF52
+P 2125 3450
+F 0 "J12" H 2082 3140 45  0000 C CNN
+F 1 "Solder pad cell-" H 2082 3224 45  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 2125 3650 20  0001 C CNN
+F 3 "" H 2125 3450 50  0001 C CNN
+F 4 "XXX-00000" H 2082 3319 60  0000 C CNN "Veld4"
+	1    2125 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-Connectors:CONN_01 J13
+U 1 1 5DD3C42A
+P 2100 2650
+F 0 "J13" H 2057 2340 45  0000 C CNN
+F 1 "Solder pad batt cell+" H 2057 2424 45  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 2100 2850 20  0001 C CNN
+F 3 "" H 2100 2650 50  0001 C CNN
+F 4 "XXX-00000" H 2057 2519 60  0000 C CNN "Veld4"
+	1    2100 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2525 1850 2525 2175
+Wire Wire Line
+	9250 3575 9800 3575
+Wire Wire Line
+	8075 3575 8325 3575
+Wire Wire Line
+	8075 1950 8325 1950
+Wire Wire Line
+	4950 3450 5450 3450
+Wire Wire Line
+	2525 2175 5125 2175
+Wire Wire Line
+	2200 2650 2525 2650
+Wire Wire Line
+	8625 1950 9350 1950
+Wire Wire Line
+	10100 3575 10450 3575
+Wire Wire Line
+	10350 2700 10450 2700
+Wire Wire Line
+	10450 2700 10450 3575
+Connection ~ 10450 3575
+Wire Wire Line
+	10450 3575 10650 3575
+Wire Wire Line
+	9550 2700 9250 2700
+Wire Wire Line
+	9250 2700 9250 3575
+Wire Wire Line
+	9550 2850 9350 2850
+Wire Wire Line
+	9350 2850 9350 2425
+$Comp
+L Device:R R7
+U 1 1 5D171DD4
+P 9350 2275
+F 0 "R7" H 9420 2321 50  0000 L CNN
+F 1 "1000R" H 9420 2230 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9280 2275 50  0001 C CNN
+F 3 "~" H 9350 2275 50  0001 C CNN
+	1    9350 2275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2125 9350 1950
+Connection ~ 9350 1950
+Wire Wire Line
+	9550 3000 8975 3000
+Connection ~ 8975 3000
+Wire Wire Line
+	8975 3000 8975 3150
+$Comp
+L SparkFun-Connectors:CONN_02JST-PTH-2 J2
+U 1 1 5D0D2529
+P 7950 2875
+F 0 "J2" H 7906 3285 45  0000 C CNN
+F 1 "CONN_02JST-PTH-2" H 7906 3201 45  0000 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 7950 3175 20  0001 C CNN
+F 3 "" H 7950 2875 50  0001 C CNN
+F 4 "CONN-09863" H 7906 3106 60  0000 C CNN "Veld4"
+	1    7950 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-Connectors:CONN_02JST-PTH-2 J3
+U 1 1 5D0D2589
+P 12225 2825
+F 0 "J3" H 11997 2780 45  0000 R CNN
+F 1 "CONN_02JST-PTH-2" H 11997 2864 45  0000 R CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 12225 3125 20  0001 C CNN
+F 3 "" H 12225 2825 50  0001 C CNN
+F 4 "CONN-09863" H 11997 2959 60  0000 R CNN "Veld4"
+	1    12225 2825
+	-1   0    0    1   
+$EndComp
+$Comp
+L SparkFun-Connectors:CONN_02JST-PTH-2 J1
+U 1 1 5D0D260F
+P 2100 3125
+F 0 "J1" H 2056 3535 45  0000 C CNN
+F 1 "CONN_02JST-PTH-2" H 2056 3451 45  0000 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 2100 3425 20  0001 C CNN
+F 3 "" H 2100 3125 50  0001 C CNN
+F 4 "CONN-09863" H 2056 3356 60  0000 C CNN "Veld4"
+	1    2100 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2225 3450 2525 3450
+Wire Wire Line
+	2200 3025 2525 3025
+Wire Wire Line
+	2525 3025 2525 2650
+Wire Wire Line
+	2200 3125 2525 3125
+Wire Wire Line
+	2525 3125 2525 3450
+Connection ~ 2525 3450
+Wire Wire Line
+	2525 3450 3325 3450
+Wire Wire Line
+	8050 2875 8325 2875
+Wire Wire Line
+	8325 2875 8325 3575
+Connection ~ 8325 3575
+Wire Wire Line
+	8325 3575 8625 3575
+Wire Wire Line
+	8050 2775 8325 2775
+Wire Wire Line
+	8325 2775 8325 1950
+Connection ~ 8325 1950
+Wire Wire Line
+	8325 1950 8625 1950
+Wire Wire Line
+	12125 2825 11925 2825
+Wire Wire Line
+	11925 2825 11925 1950
+Wire Wire Line
+	9350 1950 11925 1950
+Wire Wire Line
+	12125 2925 11925 2925
+Wire Wire Line
+	11925 2925 11925 3575
+Wire Wire Line
+	10850 3575 11925 3575
+$Comp
+L Device:Jumper JP1
+U 1 1 5D0DF5C7
+P 7775 1950
+F 0 "JP1" H 7775 2214 50  0000 C CNN
+F 1 "Jumper" H 7775 2123 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 7775 1950 50  0001 C CNN
+F 3 "~" H 7775 1950 50  0001 C CNN
+	1    7775 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP2
+U 1 1 5D0DF61D
+P 7775 3575
+F 0 "JP2" H 7775 3839 50  0000 C CNN
+F 1 "Jumper" H 7775 3748 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 7775 3575 50  0001 C CNN
+F 3 "~" H 7775 3575 50  0001 C CNN
+	1    7775 3575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2525 2625 2525 2650
+Wire Wire Line
+	2525 2175 2525 2650
+$Comp
+L Custom_parts_by_Oliver:ds2745_oliver U1
+U 1 1 5D0E63B3
+P 9950 2800
+F 0 "U1" H 9950 3275 50  0000 C CNN
+F 1 "ds2745_oliver" H 9950 3184 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 9900 2850 50  0001 C CNN
+F 3 "" H 9900 2850 50  0001 C CNN
+	1    9950 2800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10350 2550
+Wire Wire Line
+	9550 2550 9125 2550
+Wire Wire Line
+	9125 2550 9125 3575
+Connection ~ 9125 3575
+Wire Wire Line
+	9125 3575 9250 3575
+$Comp
+L power:GND #PWR0101
+U 1 1 5D0EA616
+P 9250 3750
+F 0 "#PWR0101" H 9250 3500 50  0001 C CNN
+F 1 "GND" H 9255 3577 50  0000 C CNN
+F 2 "" H 9250 3750 50  0001 C CNN
+F 3 "" H 9250 3750 50  0001 C CNN
+	1    9250 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 3750 9250 3575
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5D0ED55B
+P 12300 1550
+F 0 "J4" H 12380 1542 50  0000 L CNN
+F 1 "Conn_01x02" H 12380 1451 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 12300 1550 50  0001 C CNN
+F 3 "~" H 12300 1550 50  0001 C CNN
+	1    12300 1550
+	1    0    0    -1  
+$EndComp
+Text Label 12100 1550 2    50   ~ 0
+SCK
+Text Label 12100 1650 2    50   ~ 0
+SDO
+Wire Wire Line
+	4275 4000 4050 4000
+Wire Wire Line
+	4675 4000 4950 4000
+Wire Wire Line
+	3750 3700 3750 3500
+Wire Wire Line
+	3750 3500 4050 3500
+Wire Wire Line
+	4050 3500 4050 3375
+Wire Wire Line
+	4350 3150 4350 3500
+Wire Wire Line
+	4350 3500 4500 3500
+Wire Wire Line
+	4575 3500 4575 3700
+Connection ~ 4950 3450
+Wire Wire Line
+	3600 3450 3600 4000
+Wire Wire Line
+	3600 4000 3650 4000
+Connection ~ 3600 3450
+Wire Wire Line
+	4250 4775 4025 4775
+Wire Wire Line
+	3725 4475 3725 4275
+Wire Wire Line
+	4550 4275 4550 4475
+Wire Wire Line
+	4950 3450 4950 4000
+Wire Wire Line
+	4650 4775 4950 4775
+Connection ~ 4950 4000
+Wire Wire Line
+	4950 4000 4950 4775
+Wire Wire Line
+	3625 4775 3600 4775
+Wire Wire Line
+	3600 4775 3600 4000
+Connection ~ 3600 4000
+Text Label 3750 3500 0    50   ~ 0
+DO
+Text Label 3725 4275 0    50   ~ 0
+DO
+Text Label 4575 3500 0    50   ~ 0
+co
+Text Label 4550 4275 0    50   ~ 0
+co
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:IRLML2402TRPBF Q1
+U 1 1 5D1152FA
+P 3850 4000
+F 0 "Q1" V 4010 4000 60  0000 C CNN
+F 1 "IRLML2402TRPBF" V 4116 4000 60  0000 C CNN
+F 2 "digikey-footprints:SOT-23-3" H 4050 4200 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irlml2402pbf.pdf?fileId=5546d462533600a401535664e5ef25fa" H 4050 4300 60  0001 L CNN
+F 4 "IRLML2402PBFCT-ND" H 4050 4400 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRLML2402TRPBF" H 4050 4500 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 4050 4600 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 4050 4700 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irlml2402pbf.pdf?fileId=5546d462533600a401535664e5ef25fa" H 4050 4800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRLML2402TRPBF/IRLML2402PBFCT-ND/812508" H 4050 4900 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 20V 1.2A SOT-23" H 4050 5000 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 4050 5100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4050 5200 60  0001 L CNN "Status"
+	1    3850 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:IRLML2402TRPBF Q2
+U 1 1 5D1154D1
+P 4475 4000
+F 0 "Q2" V 4635 4000 60  0000 C CNN
+F 1 "IRLML2402TRPBF" V 4741 4000 60  0000 C CNN
+F 2 "digikey-footprints:SOT-23-3" H 4675 4200 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irlml2402pbf.pdf?fileId=5546d462533600a401535664e5ef25fa" H 4675 4300 60  0001 L CNN
+F 4 "IRLML2402PBFCT-ND" H 4675 4400 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRLML2402TRPBF" H 4675 4500 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 4675 4600 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 4675 4700 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irlml2402pbf.pdf?fileId=5546d462533600a401535664e5ef25fa" H 4675 4800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRLML2402TRPBF/IRLML2402PBFCT-ND/812508" H 4675 4900 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 20V 1.2A SOT-23" H 4675 5000 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 4675 5100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4675 5200 60  0001 L CNN "Status"
+	1    4475 4000
+	0    -1   1    0   
+$EndComp
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:IRLML2402TRPBF Q3
+U 1 1 5D115679
+P 3825 4775
+F 0 "Q3" V 3985 4775 60  0000 C CNN
+F 1 "IRLML2402TRPBF" V 4091 4775 60  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4025 4975 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irlml2402pbf.pdf?fileId=5546d462533600a401535664e5ef25fa" H 4025 5075 60  0001 L CNN
+F 4 "IRLML2402PBFCT-ND" H 4025 5175 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRLML2402TRPBF" H 4025 5275 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 4025 5375 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 4025 5475 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irlml2402pbf.pdf?fileId=5546d462533600a401535664e5ef25fa" H 4025 5575 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRLML2402TRPBF/IRLML2402PBFCT-ND/812508" H 4025 5675 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 20V 1.2A SOT-23" H 4025 5775 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 4025 5875 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4025 5975 60  0001 L CNN "Status"
+	1    3825 4775
+	0    1    1    0   
+$EndComp
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:IRLML2402TRPBF Q4
+U 1 1 5D1156E5
+P 4450 4775
+F 0 "Q4" V 4610 4775 60  0000 C CNN
+F 1 "IRLML2402TRPBF" V 4716 4775 60  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4650 4975 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irlml2402pbf.pdf?fileId=5546d462533600a401535664e5ef25fa" H 4650 5075 60  0001 L CNN
+F 4 "IRLML2402PBFCT-ND" H 4650 5175 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRLML2402TRPBF" H 4650 5275 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 4650 5375 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 4650 5475 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irlml2402pbf.pdf?fileId=5546d462533600a401535664e5ef25fa" H 4650 5575 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRLML2402TRPBF/IRLML2402PBFCT-ND/812508" H 4650 5675 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 20V 1.2A SOT-23" H 4650 5775 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 4650 5875 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4650 5975 60  0001 L CNN "Status"
+	1    4450 4775
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5D1253FF
+P 5450 3250
+F 0 "TP4" H 5508 3370 50  0000 L CNN
+F 1 "TestPoint" H 5508 3279 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5650 3250 50  0001 C CNN
+F 3 "~" H 5650 3250 50  0001 C CNN
+	1    5450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5D12547D
+P 4500 3325
+F 0 "TP2" H 4558 3445 50  0000 L CNN
+F 1 "TestPoint" H 4558 3354 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 4700 3325 50  0001 C CNN
+F 3 "~" H 4700 3325 50  0001 C CNN
+	1    4500 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5D1254E1
+P 3800 3300
+F 0 "TP1" H 3858 3420 50  0000 L CNN
+F 1 "TestPoint" H 3858 3329 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 4000 3300 50  0001 C CNN
+F 3 "~" H 4000 3300 50  0001 C CNN
+	1    3800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5D125537
+P 5125 2025
+F 0 "TP3" H 5183 2145 50  0000 L CNN
+F 1 "TestPoint" H 5183 2054 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5325 2025 50  0001 C CNN
+F 3 "~" H 5325 2025 50  0001 C CNN
+	1    5125 2025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3250 5450 3450
+Connection ~ 5450 3450
+Wire Wire Line
+	5450 3450 5750 3450
+Wire Wire Line
+	4500 3325 4500 3500
+Connection ~ 4500 3500
+Wire Wire Line
+	4500 3500 4575 3500
+Wire Wire Line
+	3800 3300 3800 3375
+Wire Wire Line
+	3800 3375 4050 3375
+Connection ~ 4050 3375
+Wire Wire Line
+	4050 3375 4050 3150
+Wire Wire Line
+	5125 2025 5125 2175
+Connection ~ 5125 2175
+Wire Wire Line
+	5125 2175 5675 2175
+$EndSCHEMATC

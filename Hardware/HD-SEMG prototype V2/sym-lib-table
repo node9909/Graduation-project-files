@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name HDSEMG-rescue)(type Legacy)(uri ${KIPRJMOD}/HDSEMG-rescue.lib)(options "")(descr ""))
+)
