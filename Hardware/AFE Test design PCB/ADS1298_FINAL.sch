@@ -27,7 +27,7 @@ IN7
 $Sheet
 S 2725 12575 1000 825 
 U 794AF32B
-F0 "sheet794AF31F" 50
+F0 "Desing 1" 50
 F1 "EMG12.sch" 50
 F2 "GND" I L 2725 12700 50 
 F3 "EMG_OUT" I R 3725 12725 50 
@@ -879,7 +879,7 @@ IN6P
 $Sheet
 S 2075 7625 1725 1175
 U 6BC98BE3
-F0 "Original design 1" 50
+F0 "Desing 2.1" 50
 F1 "OriginalDesing1.sch" 50
 F2 "OD1_OUT" O R 3800 8225 50 
 F3 "IN4+" I L 2075 8075 50 
@@ -888,7 +888,7 @@ $EndSheet
 $Sheet
 S 2075 9050 1725 1175
 U 6BC9936A
-F0 "Alternative design 1" 50
+F0 "Desing 2.2" 50
 F1 "Alternativedesing1.sch" 50
 F2 "IN-5" I L 2075 9475 50 
 F3 "IN+5" I L 2075 9775 50 
@@ -897,7 +897,7 @@ $EndSheet
 $Sheet
 S 2075 4725 1725 1175
 U 6BC99DBF
-F0 "Alternative Design 1.2" 50
+F0 "Desing 2.4" 50
 F1 "AlternativeDesign2.sch" 50
 F2 "IN-2" I L 2075 5400 50 
 F3 "IN+2" I L 2075 5225 50 
@@ -906,7 +906,7 @@ $EndSheet
 $Sheet
 S 2075 6200 1725 1175
 U 6BC9A362
-F0 "Alternative Desing 1.3" 50
+F0 "Desing 2.3" 50
 F1 "AlternativeDesign3.sch" 50
 F2 "IN-3" I L 2075 6550 50 
 F3 "IN+3" I L 2075 7025 50 
@@ -918,7 +918,7 @@ Wire Wire Line
 $Sheet
 S 2075 10525 1725 1150
 U 5D81CCB3
-F0 "Schematic marelini" 50
+F0 "Schematic Roberto Marelini" 50
 F1 "Onderzoek_Malerini.sch" 50
 F2 "AD3_OUT_P" I R 3800 10925 50 
 F3 "AD3_OUT_N" I R 3800 11325 50 
