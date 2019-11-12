@@ -1,4 +1,4 @@
-14802902614686470
+14804475865558148
 5003
 TPCW51D250H460P
 
@@ -35972,6 +35972,13 @@ THT ceramic resonator filter DSS6
 0
 3
 3
+Custom Footprint By Oliver
+ADS1298_Adapter
+
+
+0
+64
+64
 Diode_SMD
 D_0201_0603Metric
 Diode SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
