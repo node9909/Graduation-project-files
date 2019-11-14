@@ -139,8 +139,6 @@ Wire Wire Line
 	4075 1450 4075 1600
 Wire Wire Line
 	4075 1600 4500 1600
-Text GLabel 4500 850  1    50   Input ~ 0
-VREFP1
 $Comp
 L Device:C C?
 U 1 1 5F07B17D
@@ -168,9 +166,6 @@ Wire Wire Line
 Connection ~ 4475 6400
 Wire Wire Line
 	4475 6400 4475 6275
-Wire Wire Line
-	4500 850  4500 1000
-Connection ~ 4500 1000
 Wire Wire Line
 	4500 1000 4500 1150
 $Comp
@@ -259,8 +254,6 @@ Connection ~ 2800 7100
 Wire Wire Line
 	2800 7100 2800 7275
 Connection ~ 4075 1600
-Text GLabel 4500 1725 3    50   Input ~ 0
-VREFN
 Connection ~ 4500 1600
 $Comp
 L HDSEMG-rescue:ADS1298_By_Oliver-ADS1298 IC?
@@ -307,8 +300,6 @@ Wire Wire Line
 Connection ~ 4075 1000
 Wire Wire Line
 	4075 1000 4500 1000
-Wire Wire Line
-	4500 1725 4500 1600
 Wire Wire Line
 	4900 2625 4825 2625
 Wire Wire Line

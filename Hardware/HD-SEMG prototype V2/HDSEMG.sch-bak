@@ -227,42 +227,42 @@ Wire Notes Line
 Wire Notes Line
 	6300 8325 4100 8325
 $Sheet
-S 8025 6175 1375 1075
+S 6975 4825 1375 1075
 U 5E5E27F2
 F0 "Power supply circuit" 50
 F1 "power_supply.sch" 50
-F2 "Power_IN" I R 9400 6700 50 
-F3 "+3V3" O L 8025 6525 50 
-F4 "+2V5" O L 8025 6750 50 
-F5 "-2V5" I L 8025 6975 50 
+F2 "Power_IN" I R 8350 5350 50 
+F3 "+3V3" O L 6975 5175 50 
+F4 "+2V5" O L 6975 5400 50 
+F5 "-2V5" I L 6975 5625 50 
 $EndSheet
-Text GLabel 7775 6750 0    50   Output ~ 0
+Text GLabel 6725 5400 0    50   Output ~ 0
 +2V5
-Text GLabel 7775 6525 0    50   Output ~ 0
+Text GLabel 6725 5175 0    50   Output ~ 0
 +3_3V
-Text GLabel 7775 6975 0    50   Output ~ 0
+Text GLabel 6725 5625 0    50   Output ~ 0
 -2V5
 Wire Wire Line
-	7775 6975 8025 6975
+	6725 5625 6975 5625
 Wire Wire Line
-	8025 6750 7775 6750
+	6975 5400 6725 5400
 Wire Wire Line
-	7775 6525 8025 6525
+	6725 5175 6975 5175
 $Comp
 L power:+5V #PWR012
 U 1 1 5EA6E0A5
-P 10500 6425
-F 0 "#PWR012" H 10500 6275 50  0001 C CNN
-F 1 "+5V" H 10515 6598 50  0000 C CNN
-F 2 "" H 10500 6425 50  0001 C CNN
-F 3 "" H 10500 6425 50  0001 C CNN
-	1    10500 6425
+P 9450 5075
+F 0 "#PWR012" H 9450 4925 50  0001 C CNN
+F 1 "+5V" H 9465 5248 50  0000 C CNN
+F 2 "" H 9450 5075 50  0001 C CNN
+F 3 "" H 9450 5075 50  0001 C CNN
+	1    9450 5075
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10500 6425 10500 6700
+	9450 5075 9450 5350
 Wire Wire Line
-	10500 6700 10450 6700
+	9450 5350 9400 5350
 Wire Wire Line
 	5400 9375 5525 9375
 Wire Wire Line
@@ -573,7 +573,7 @@ Text Notes 16200 6000 2    50   ~ 0
 Power supply isolated (medical 1kV), 12V in, 5V out and EMC filter
 Text Notes 16200 6125 2    50   ~ 0
 DC power jack connector 2.1mm\n
-Text Notes 8150 5850 2    50   ~ 0
+Text Notes 7100 4500 2    50   ~ 0
 Power converters\n
 Text Notes 12000 1650 0    50   ~ 0
 Optical Isolation barrier\n
@@ -799,17 +799,17 @@ Connection ~ 9225 10150
 $Comp
 L HDSEMG-rescue:5003-5003 TP36
 U 1 1 5F0A1809
-P 9700 6400
-F 0 "TP36" H 9776 6402 50  0000 L CNN
-F 1 "5003" H 9776 6311 50  0000 L CNN
-F 2 "footprints:keystone_PCB_TEST_PIN" H 9700 6400 50  0001 L BNN
-F 3 "Keystone Electronics" H 9700 6400 50  0001 L BNN
-F 4 "https://www.digikey.com/product-detail/en/keystone-electronics/5003/36-5003-ND/362668?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 9700 6400 50  0001 L BNN "Veld4"
-F 5 "Test Point; Orange; Thru-Hole; Snap-Fit; SilverPlate; 0.040 in. Dia.; 0.300 In." H 9700 6400 50  0001 L BNN "Veld5"
-F 6 "36-5003-ND" H 9700 6400 50  0001 L BNN "Veld6"
-F 7 "5003" H 9700 6400 50  0001 L BNN "Veld7"
-F 8 "Through Hole Keystone Electronics" H 9700 6400 50  0001 L BNN "Veld8"
-	1    9700 6400
+P 8650 5050
+F 0 "TP36" H 8726 5052 50  0000 L CNN
+F 1 "5003" H 8726 4961 50  0000 L CNN
+F 2 "footprints:keystone_PCB_TEST_PIN" H 8650 5050 50  0001 L BNN
+F 3 "Keystone Electronics" H 8650 5050 50  0001 L BNN
+F 4 "https://www.digikey.com/product-detail/en/keystone-electronics/5003/36-5003-ND/362668?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 8650 5050 50  0001 L BNN "Veld4"
+F 5 "Test Point; Orange; Thru-Hole; Snap-Fit; SilverPlate; 0.040 in. Dia.; 0.300 In." H 8650 5050 50  0001 L BNN "Veld5"
+F 6 "36-5003-ND" H 8650 5050 50  0001 L BNN "Veld6"
+F 7 "5003" H 8650 5050 50  0001 L BNN "Veld7"
+F 8 "Through Hole Keystone Electronics" H 8650 5050 50  0001 L BNN "Veld8"
+	1    8650 5050
 	-1   0    0    -1  
 $EndComp
 Text GLabel 10600 2400 0    50   Input ~ 0
@@ -1201,68 +1201,68 @@ ISO_PWDN
 $Comp
 L arduino-ads129x-cache:INDUCTOR L3
 U 1 1 5DDA9EC3
-P 10150 6700
-F 0 "L3" V 9992 6700 40  0000 C CNN
-F 1 "INDUCTOR" V 10068 6700 40  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10150 6700 60  0001 C CNN
-F 3 "" H 10150 6700 60  0000 C CNN
-	1    10150 6700
+P 9100 5350
+F 0 "L3" V 8942 5350 40  0000 C CNN
+F 1 "INDUCTOR" V 9018 5350 40  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9100 5350 60  0001 C CNN
+F 3 "" H 9100 5350 60  0000 C CNN
+	1    9100 5350
 	0    -1   1    0   
 $EndComp
 $Comp
 L arduino-ads129x-cache:C C52
 U 1 1 5DDAA805
-P 10500 7000
-F 0 "C52" H 10615 7038 40  0000 L CNN
-F 1 "10uF" H 10615 6962 40  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10538 6850 30  0001 C CNN
-F 3 "" H 10500 7000 60  0000 C CNN
-	1    10500 7000
+P 9450 5650
+F 0 "C52" H 9565 5688 40  0000 L CNN
+F 1 "10uF" H 9565 5612 40  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9488 5500 30  0001 C CNN
+F 3 "" H 9450 5650 60  0000 C CNN
+	1    9450 5650
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10500 6800 10500 6700
-Connection ~ 10500 6700
+	9450 5450 9450 5350
+Connection ~ 9450 5350
 $Comp
 L power:GND #PWR0101
 U 1 1 5DDB8FB2
-P 10500 7300
-F 0 "#PWR0101" H 10500 7050 50  0001 C CNN
-F 1 "GND" H 10505 7127 50  0000 C CNN
-F 2 "" H 10500 7300 50  0001 C CNN
-F 3 "" H 10500 7300 50  0001 C CNN
-	1    10500 7300
+P 9450 5950
+F 0 "#PWR0101" H 9450 5700 50  0001 C CNN
+F 1 "GND" H 9455 5777 50  0000 C CNN
+F 2 "" H 9450 5950 50  0001 C CNN
+F 3 "" H 9450 5950 50  0001 C CNN
+	1    9450 5950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10500 7250 10500 7200
+	9450 5900 9450 5850
 $Comp
 L arduino-ads129x-cache:C C53
 U 1 1 5DDC5789
-P 9700 7000
-F 0 "C53" H 9815 7038 40  0000 L CNN
-F 1 "10uF" H 9815 6962 40  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9738 6850 30  0001 C CNN
-F 3 "" H 9700 7000 60  0000 C CNN
-	1    9700 7000
+P 8650 5650
+F 0 "C53" H 8765 5688 40  0000 L CNN
+F 1 "10uF" H 8765 5612 40  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8688 5500 30  0001 C CNN
+F 3 "" H 8650 5650 60  0000 C CNN
+	1    8650 5650
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	9850 6700 9700 6700
+	8800 5350 8650 5350
 Wire Wire Line
-	9700 6500 9700 6700
-Connection ~ 9700 6700
+	8650 5150 8650 5350
+Connection ~ 8650 5350
 Wire Wire Line
-	9700 6700 9400 6700
+	8650 5350 8350 5350
 Wire Wire Line
-	9700 6800 9700 6700
+	8650 5450 8650 5350
 Wire Wire Line
-	9700 7200 9700 7250
+	8650 5850 8650 5900
 Wire Wire Line
-	9700 7250 10500 7250
-Connection ~ 10500 7250
+	8650 5900 9450 5900
+Connection ~ 9450 5900
 Wire Wire Line
-	10500 7300 10500 7250
+	9450 5950 9450 5900
 $Comp
 L arduino-ads129x-cache:LED D1
 U 1 1 5DE3FB76
@@ -1360,94 +1360,94 @@ Wire Wire Line
 Wire Wire Line
 	8525 2000 9000 2000
 Wire Wire Line
-	5475 7225 5475 7450
+	10475 8725 10475 8950
 Wire Wire Line
-	4725 7225 4725 7450
+	9725 8725 9725 8950
 $Comp
 L HDSEMG-rescue:5003-5003 TP13
 U 1 1 5DE0BBDE
-P 4725 7125
-F 0 "TP13" H 4801 7127 50  0000 L CNN
-F 1 "5003" H 4801 7036 50  0000 L CNN
-F 2 "footprints:keystone_PCB_TEST_PIN" H 4725 7125 50  0001 L BNN
-F 3 "Keystone Electronics" H 4725 7125 50  0001 L BNN
-F 4 "https://www.digikey.com/product-detail/en/keystone-electronics/5003/36-5003-ND/362668?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 4725 7125 50  0001 L BNN "Veld4"
-F 5 "Test Point; Orange; Thru-Hole; Snap-Fit; SilverPlate; 0.040 in. Dia.; 0.300 In." H 4725 7125 50  0001 L BNN "Veld5"
-F 6 "36-5003-ND" H 4725 7125 50  0001 L BNN "Veld6"
-F 7 "5003" H 4725 7125 50  0001 L BNN "Veld7"
-F 8 "Through Hole Keystone Electronics" H 4725 7125 50  0001 L BNN "Veld8"
-	1    4725 7125
+P 9725 8625
+F 0 "TP13" H 9801 8627 50  0000 L CNN
+F 1 "5003" H 9801 8536 50  0000 L CNN
+F 2 "footprints:keystone_PCB_TEST_PIN" H 9725 8625 50  0001 L BNN
+F 3 "Keystone Electronics" H 9725 8625 50  0001 L BNN
+F 4 "https://www.digikey.com/product-detail/en/keystone-electronics/5003/36-5003-ND/362668?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 9725 8625 50  0001 L BNN "Veld4"
+F 5 "Test Point; Orange; Thru-Hole; Snap-Fit; SilverPlate; 0.040 in. Dia.; 0.300 In." H 9725 8625 50  0001 L BNN "Veld5"
+F 6 "36-5003-ND" H 9725 8625 50  0001 L BNN "Veld6"
+F 7 "5003" H 9725 8625 50  0001 L BNN "Veld7"
+F 8 "Through Hole Keystone Electronics" H 9725 8625 50  0001 L BNN "Veld8"
+	1    9725 8625
 	1    0    0    -1  
 $EndComp
 $Comp
 L HDSEMG-rescue:5003-5003 TP14
 U 1 1 5DE0B7C3
-P 5475 7125
-F 0 "TP14" H 5551 7127 50  0000 L CNN
-F 1 "5003" H 5551 7036 50  0000 L CNN
-F 2 "footprints:keystone_PCB_TEST_PIN" H 5475 7125 50  0001 L BNN
-F 3 "Keystone Electronics" H 5475 7125 50  0001 L BNN
-F 4 "https://www.digikey.com/product-detail/en/keystone-electronics/5003/36-5003-ND/362668?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 5475 7125 50  0001 L BNN "Veld4"
-F 5 "Test Point; Orange; Thru-Hole; Snap-Fit; SilverPlate; 0.040 in. Dia.; 0.300 In." H 5475 7125 50  0001 L BNN "Veld5"
-F 6 "36-5003-ND" H 5475 7125 50  0001 L BNN "Veld6"
-F 7 "5003" H 5475 7125 50  0001 L BNN "Veld7"
-F 8 "Through Hole Keystone Electronics" H 5475 7125 50  0001 L BNN "Veld8"
-	1    5475 7125
+P 10475 8625
+F 0 "TP14" H 10551 8627 50  0000 L CNN
+F 1 "5003" H 10551 8536 50  0000 L CNN
+F 2 "footprints:keystone_PCB_TEST_PIN" H 10475 8625 50  0001 L BNN
+F 3 "Keystone Electronics" H 10475 8625 50  0001 L BNN
+F 4 "https://www.digikey.com/product-detail/en/keystone-electronics/5003/36-5003-ND/362668?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 10475 8625 50  0001 L BNN "Veld4"
+F 5 "Test Point; Orange; Thru-Hole; Snap-Fit; SilverPlate; 0.040 in. Dia.; 0.300 In." H 10475 8625 50  0001 L BNN "Veld5"
+F 6 "36-5003-ND" H 10475 8625 50  0001 L BNN "Veld6"
+F 7 "5003" H 10475 8625 50  0001 L BNN "Veld7"
+F 8 "Through Hole Keystone Electronics" H 10475 8625 50  0001 L BNN "Veld8"
+	1    10475 8625
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4725 7450 4675 7450
-Connection ~ 4725 7450
+	9725 8950 9675 8950
+Connection ~ 9725 8950
 Wire Wire Line
-	4725 7550 4725 7450
+	9725 9050 9725 8950
 Wire Wire Line
-	4825 7550 4725 7550
+	9825 9050 9725 9050
 Wire Wire Line
-	4825 7450 4725 7450
+	9825 8950 9725 8950
 Wire Wire Line
-	5475 7450 5325 7450
-Connection ~ 5475 7450
+	10475 8950 10325 8950
+Connection ~ 10475 8950
 Wire Wire Line
-	5475 7550 5475 7450
+	10475 9050 10475 8950
 Wire Wire Line
-	5325 7550 5475 7550
+	10325 9050 10475 9050
 Wire Wire Line
-	5625 7450 5475 7450
+	10625 8950 10475 8950
 $Comp
 L power:GND #PWR?
 U 1 1 5DC89D25
-P 5625 7450
+P 10625 8950
 AR Path="/5D249131/5DC89D25" Ref="#PWR?"  Part="1" 
 AR Path="/5DC89D25" Ref="#PWR0112"  Part="1" 
-F 0 "#PWR0112" H 5625 7200 50  0001 C CNN
-F 1 "GND" H 5630 7277 50  0000 C CNN
-F 2 "" H 5625 7450 50  0001 C CNN
-F 3 "" H 5625 7450 50  0001 C CNN
-	1    5625 7450
+F 0 "#PWR0112" H 10625 8700 50  0001 C CNN
+F 1 "GND" H 10630 8777 50  0000 C CNN
+F 2 "" H 10625 8950 50  0001 C CNN
+F 3 "" H 10625 8950 50  0001 C CNN
+	1    10625 8950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5DC89B22
-P 4675 7450
+P 9675 8950
 AR Path="/5D249131/5DC89B22" Ref="#PWR?"  Part="1" 
 AR Path="/5DC89B22" Ref="#PWR0111"  Part="1" 
-F 0 "#PWR0111" H 4675 7200 50  0001 C CNN
-F 1 "GND" H 4680 7277 50  0000 C CNN
-F 2 "" H 4675 7450 50  0001 C CNN
-F 3 "" H 4675 7450 50  0001 C CNN
-	1    4675 7450
+F 0 "#PWR0111" H 9675 8700 50  0001 C CNN
+F 1 "GND" H 9680 8777 50  0000 C CNN
+F 2 "" H 9675 8950 50  0001 C CNN
+F 3 "" H 9675 8950 50  0001 C CNN
+	1    9675 8950
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x02_Counter_Clockwise GND1
 U 1 1 5DC898E2
-P 5025 7450
-F 0 "GND1" H 5075 7667 50  0000 C CNN
-F 1 "Conn_02x02_Counter_Clockwise" H 5075 7576 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5025 7450 50  0001 C CNN
-F 3 "~" H 5025 7450 50  0001 C CNN
-	1    5025 7450
+P 10025 8950
+F 0 "GND1" H 10075 9167 50  0000 C CNN
+F 1 "Conn_02x02_Counter_Clockwise" H 10075 9076 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 10025 8950 50  0001 C CNN
+F 3 "~" H 10025 8950 50  0001 C CNN
+	1    10025 8950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1758,24 +1758,24 @@ Wire Notes Line
 Text Notes 13500 3850 0    50   Italic 0
 Test pin to verify the isolation barrier
 Wire Notes Line
-	10850 5600 7350 5600
+	9800 4250 6300 4250
 Wire Notes Line
-	7350 5600 7350 7650
+	6300 4250 6300 6300
 Wire Notes Line
-	7350 7650 10850 7650
+	6300 6300 9800 6300
 Wire Notes Line
-	10850 5600 10850 7650
-Text Notes 7500 5950 0    50   Italic 0
+	9800 4250 9800 6300
+Text Notes 6450 4600 0    50   Italic 0
 Input 5V, output -/+2,5V and +3.3V\n
 Wire Notes Line
-	5950 6750 4100 6750
+	10950 8250 9100 8250
 Wire Notes Line
-	4100 6750 4100 7900
+	9100 8250 9100 9400
 Wire Notes Line
-	4100 7900 5950 7900
+	9100 9400 10950 9400
 Wire Notes Line
-	5950 6750 5950 7900
-Text Notes 4200 7000 0    50   Italic 0
+	10950 8250 10950 9400
+Text Notes 9200 8500 0    50   Italic 0
 Extra GND pins to use \nfor testing
 Wire Wire Line
 	1350 10100 2400 10100
@@ -1858,4 +1858,6 @@ Wire Notes Line
 	12450 8400 12450 9900
 Text Notes 4650 11000 0    50   Italic 0
 Power output connectors
+Text Notes 10300 7350 0    50   Italic 0
+Power ON\nindication led
 $EndSCHEMATC

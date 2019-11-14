@@ -1360,94 +1360,94 @@ Wire Wire Line
 Wire Wire Line
 	8525 2000 9000 2000
 Wire Wire Line
-	5475 7225 5475 7450
+	10475 8725 10475 8950
 Wire Wire Line
-	4725 7225 4725 7450
+	9725 8725 9725 8950
 $Comp
 L HDSEMG-rescue:5003-5003 TP13
 U 1 1 5DE0BBDE
-P 4725 7125
-F 0 "TP13" H 4801 7127 50  0000 L CNN
-F 1 "5003" H 4801 7036 50  0000 L CNN
-F 2 "footprints:keystone_PCB_TEST_PIN" H 4725 7125 50  0001 L BNN
-F 3 "Keystone Electronics" H 4725 7125 50  0001 L BNN
-F 4 "https://www.digikey.com/product-detail/en/keystone-electronics/5003/36-5003-ND/362668?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 4725 7125 50  0001 L BNN "Veld4"
-F 5 "Test Point; Orange; Thru-Hole; Snap-Fit; SilverPlate; 0.040 in. Dia.; 0.300 In." H 4725 7125 50  0001 L BNN "Veld5"
-F 6 "36-5003-ND" H 4725 7125 50  0001 L BNN "Veld6"
-F 7 "5003" H 4725 7125 50  0001 L BNN "Veld7"
-F 8 "Through Hole Keystone Electronics" H 4725 7125 50  0001 L BNN "Veld8"
-	1    4725 7125
+P 9725 8625
+F 0 "TP13" H 9801 8627 50  0000 L CNN
+F 1 "5003" H 9801 8536 50  0000 L CNN
+F 2 "footprints:keystone_PCB_TEST_PIN" H 9725 8625 50  0001 L BNN
+F 3 "Keystone Electronics" H 9725 8625 50  0001 L BNN
+F 4 "https://www.digikey.com/product-detail/en/keystone-electronics/5003/36-5003-ND/362668?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 9725 8625 50  0001 L BNN "Veld4"
+F 5 "Test Point; Orange; Thru-Hole; Snap-Fit; SilverPlate; 0.040 in. Dia.; 0.300 In." H 9725 8625 50  0001 L BNN "Veld5"
+F 6 "36-5003-ND" H 9725 8625 50  0001 L BNN "Veld6"
+F 7 "5003" H 9725 8625 50  0001 L BNN "Veld7"
+F 8 "Through Hole Keystone Electronics" H 9725 8625 50  0001 L BNN "Veld8"
+	1    9725 8625
 	1    0    0    -1  
 $EndComp
 $Comp
 L HDSEMG-rescue:5003-5003 TP14
 U 1 1 5DE0B7C3
-P 5475 7125
-F 0 "TP14" H 5551 7127 50  0000 L CNN
-F 1 "5003" H 5551 7036 50  0000 L CNN
-F 2 "footprints:keystone_PCB_TEST_PIN" H 5475 7125 50  0001 L BNN
-F 3 "Keystone Electronics" H 5475 7125 50  0001 L BNN
-F 4 "https://www.digikey.com/product-detail/en/keystone-electronics/5003/36-5003-ND/362668?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 5475 7125 50  0001 L BNN "Veld4"
-F 5 "Test Point; Orange; Thru-Hole; Snap-Fit; SilverPlate; 0.040 in. Dia.; 0.300 In." H 5475 7125 50  0001 L BNN "Veld5"
-F 6 "36-5003-ND" H 5475 7125 50  0001 L BNN "Veld6"
-F 7 "5003" H 5475 7125 50  0001 L BNN "Veld7"
-F 8 "Through Hole Keystone Electronics" H 5475 7125 50  0001 L BNN "Veld8"
-	1    5475 7125
+P 10475 8625
+F 0 "TP14" H 10551 8627 50  0000 L CNN
+F 1 "5003" H 10551 8536 50  0000 L CNN
+F 2 "footprints:keystone_PCB_TEST_PIN" H 10475 8625 50  0001 L BNN
+F 3 "Keystone Electronics" H 10475 8625 50  0001 L BNN
+F 4 "https://www.digikey.com/product-detail/en/keystone-electronics/5003/36-5003-ND/362668?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 10475 8625 50  0001 L BNN "Veld4"
+F 5 "Test Point; Orange; Thru-Hole; Snap-Fit; SilverPlate; 0.040 in. Dia.; 0.300 In." H 10475 8625 50  0001 L BNN "Veld5"
+F 6 "36-5003-ND" H 10475 8625 50  0001 L BNN "Veld6"
+F 7 "5003" H 10475 8625 50  0001 L BNN "Veld7"
+F 8 "Through Hole Keystone Electronics" H 10475 8625 50  0001 L BNN "Veld8"
+	1    10475 8625
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4725 7450 4675 7450
-Connection ~ 4725 7450
+	9725 8950 9675 8950
+Connection ~ 9725 8950
 Wire Wire Line
-	4725 7550 4725 7450
+	9725 9050 9725 8950
 Wire Wire Line
-	4825 7550 4725 7550
+	9825 9050 9725 9050
 Wire Wire Line
-	4825 7450 4725 7450
+	9825 8950 9725 8950
 Wire Wire Line
-	5475 7450 5325 7450
-Connection ~ 5475 7450
+	10475 8950 10325 8950
+Connection ~ 10475 8950
 Wire Wire Line
-	5475 7550 5475 7450
+	10475 9050 10475 8950
 Wire Wire Line
-	5325 7550 5475 7550
+	10325 9050 10475 9050
 Wire Wire Line
-	5625 7450 5475 7450
+	10625 8950 10475 8950
 $Comp
 L power:GND #PWR?
 U 1 1 5DC89D25
-P 5625 7450
+P 10625 8950
 AR Path="/5D249131/5DC89D25" Ref="#PWR?"  Part="1" 
 AR Path="/5DC89D25" Ref="#PWR0112"  Part="1" 
-F 0 "#PWR0112" H 5625 7200 50  0001 C CNN
-F 1 "GND" H 5630 7277 50  0000 C CNN
-F 2 "" H 5625 7450 50  0001 C CNN
-F 3 "" H 5625 7450 50  0001 C CNN
-	1    5625 7450
+F 0 "#PWR0112" H 10625 8700 50  0001 C CNN
+F 1 "GND" H 10630 8777 50  0000 C CNN
+F 2 "" H 10625 8950 50  0001 C CNN
+F 3 "" H 10625 8950 50  0001 C CNN
+	1    10625 8950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5DC89B22
-P 4675 7450
+P 9675 8950
 AR Path="/5D249131/5DC89B22" Ref="#PWR?"  Part="1" 
 AR Path="/5DC89B22" Ref="#PWR0111"  Part="1" 
-F 0 "#PWR0111" H 4675 7200 50  0001 C CNN
-F 1 "GND" H 4680 7277 50  0000 C CNN
-F 2 "" H 4675 7450 50  0001 C CNN
-F 3 "" H 4675 7450 50  0001 C CNN
-	1    4675 7450
+F 0 "#PWR0111" H 9675 8700 50  0001 C CNN
+F 1 "GND" H 9680 8777 50  0000 C CNN
+F 2 "" H 9675 8950 50  0001 C CNN
+F 3 "" H 9675 8950 50  0001 C CNN
+	1    9675 8950
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x02_Counter_Clockwise GND1
 U 1 1 5DC898E2
-P 5025 7450
-F 0 "GND1" H 5075 7667 50  0000 C CNN
-F 1 "Conn_02x02_Counter_Clockwise" H 5075 7576 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5025 7450 50  0001 C CNN
-F 3 "~" H 5025 7450 50  0001 C CNN
-	1    5025 7450
+P 10025 8950
+F 0 "GND1" H 10075 9167 50  0000 C CNN
+F 1 "Conn_02x02_Counter_Clockwise" H 10075 9076 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 10025 8950 50  0001 C CNN
+F 3 "~" H 10025 8950 50  0001 C CNN
+	1    10025 8950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1768,14 +1768,14 @@ Wire Notes Line
 Text Notes 6450 4600 0    50   Italic 0
 Input 5V, output -/+2,5V and +3.3V\n
 Wire Notes Line
-	5950 6750 4100 6750
+	10950 8250 9100 8250
 Wire Notes Line
-	4100 6750 4100 7900
+	9100 8250 9100 9400
 Wire Notes Line
-	4100 7900 5950 7900
+	9100 9400 10950 9400
 Wire Notes Line
-	5950 6750 5950 7900
-Text Notes 4200 7000 0    50   Italic 0
+	10950 8250 10950 9400
+Text Notes 9200 8500 0    50   Italic 0
 Extra GND pins to use \nfor testing
 Wire Wire Line
 	1350 10100 2400 10100

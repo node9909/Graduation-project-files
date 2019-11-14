@@ -1,4 +1,4 @@
-14804475865558148
+14807623025546933
 5003
 TPCW51D250H460P
 
@@ -6,6 +6,13 @@ TPCW51D250H460P
 0
 1
 1
+ADS1298
+HTQFP-64-PAP
+<b>PAP (S-PQFP-G46)</b> PowerPAD Package<p>Source: http://focus.ti.com/lit/ds/symlink/ads1274.pdf<br>www.ti.com .. slma002.pdf
+
+0
+64
+64
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -66198,3 +66205,10 @@ varistor SIOV
 0
 2
 2
+footprints
+ADS1298IPAGR
+
+
+0
+64
+64
