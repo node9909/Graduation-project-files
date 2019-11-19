@@ -7,7 +7,7 @@ import statistics
 import numpy
 import time
 import tkinter
-
+global datatotat
 val = int('0x7FFFFF', 16)
 
 data = []
@@ -18,7 +18,7 @@ nbr = []
 nbrSamples = 100;  #number of samples to read
 
 ActiveChannel_Plot = [[],[]]
-datatotat = [[],[]]
+
 activeChannels = [] # array wilh all the channel ticked out
 
 maximunarray = []
@@ -154,14 +154,13 @@ def plotdata_ADS1298():
     W = np.mat(nbr)
     W = W.transpose()
 
+    global datatotat
     datatotat = np.concatenate((W, volt_matrix), axis=1)  # this will add the x adn y values into one array
 
     ser.close()
     print ("Done")
 
 def saveClick():  # Save data to file
-
-
     global datatotat
     numpy.savetxt(str(FILE_NAME.get()), datatotat, delimiter=",")
 
