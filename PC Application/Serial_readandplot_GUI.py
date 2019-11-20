@@ -7,6 +7,9 @@ import statistics
 import numpy
 import time
 import tkinter
+import scipy
+from scipy.signal import find_peaks, peak_prominences
+
 global datatotat
 val = int('0x7FFFFF', 16)
 
@@ -20,16 +23,19 @@ nbrSamples = 100;  #number of samples to read
 ActiveChannel_Plot = [[],[]]
 
 activeChannels = [] # array wilh all the channel ticked out
+result = []
 
 maximunarray = []
 minumunarray = []
+
 rmsmatrix = []
 stdevmatrix = []
+
 activeChannels=[]
 
 plt.ion()
 
-ser = serial.Serial(port='COM3',baudrate=230400,parity=serial.PARITY_NONE,stopbits=serial.STOPBITS_ONE,bytesize=serial.EIGHTBITS,timeout=10  )
+ser = serial.Serial(port='COM3',parity=serial.PARITY_NONE,stopbits=serial.STOPBITS_ONE,bytesize=serial.EIGHTBITS,timeout=10  )
 ser.close()
 
 def quit():
@@ -40,34 +46,41 @@ def quit():
 def calcRMSandPTP(): # calculate RMS and Peak to peak of the activated channels
     # Peak to peak of signal
     # Method 1:
-    maximunarray = numpy.amax(ActiveChannel_Plot, axis=0)  # Maxima along the first axis
-    minumunarray = numpy.amin(ActiveChannel_Plot, axis=0)  # Maxima along the first axis
+    global datatotat
+
+    maximunarray = numpy.amax(datatotat, axis=0)  # Maxima along the first axis
+    minumunarray = numpy.amin(datatotat, axis=0)  # Maxima along the first axis
     result = np.subtract(maximunarray, minumunarray)
-    print ("Peak to Peak = ", result)
+    #del result[0]
+    print ("Peak to Peak of channels 1 - 8 (max min):",result)
 
     # Method 2:
     # https://scipy.github.io/devdocs/generated/scipy.signal.peak_prominences.html
     # THis method will calculate over the whole signal all the peak to peaks, thus very interesting
     # from scipy.signal import find_peaks, peak_prominences
-    # voltpeak2peak = []
-    # for n in range(8):
-    #    peaks, _ = find_peaks(Volt_String[n]) # will use this array
-    #    prominences = peak_prominences(Volt_String[n], peaks)[0]
-    #    voltpeak2peak.append(prominences[1]) #s kips the first one and uses the second one, as the first one could be wrong
-    # print (voltpeak2peak)
-    # this function was not used as is sometimes didnt find the correct Peak to peak in second element
-    # thus a better method should be found to measure the peak to peak from the array
+    voltpeak2peak = []
 
-    # Route Mean Square
+    Z = np.mat(datatotat[:,2])
+    Z = Z.transpose()
+    F = Z.getA1()
+    peaks, _ = find_peaks(F)
+    prominences = peak_prominences(F, peaks)[0]
+    print ("Peak to Peak of CH 2 (scipy):",prominences)
+
+    L = datatotat[:, 1].getA1()
+    peaks1, _ = find_peaks(L)
+    prominences1 = peak_prominences(L, peaks1)[0]
+    print ("Peak to Peak of CH 1 (scipy):",prominences1)
+
     del rmsmatrix[:]
-    for n in range(8):
-        rmsmatrix.append(np.sqrt(np.mean(ActiveChannel_Plot[:,n]**2)))
-    print("RMS of the channels are",rmsmatrix)
-    # Standard derivatio
+    for n in range(1,9):
+        rmsmatrix.append(np.sqrt(np.mean((datatotat[:,n].getA1())**2)))
+    print("RMS of channels 1 - 8:", rmsmatrix)
+
     del stdevmatrix[:]
-    for n in range(8):
-        stdevmatrix.append(statistics.stdev(ActiveChannel_Plot[:, n]))
-    print("STDEV of the channels are", stdevmatrix)
+    for n in range(1,9):
+        stdevmatrix.append(statistics.stdev(datatotat[:,n].getA1()))
+    print("STDEV of channels 1 - 8:", stdevmatrix)
 
 
 def plotdata_ADS1298():
@@ -150,6 +163,7 @@ def plotdata_ADS1298():
     plt.title('Display ADS1298 Data')
     plt.ylabel('Voltage')
     plt.xlabel('Sample (nr)')
+    plt.xlim(0, lenthofchannel)
 
     W = np.mat(nbr)
     W = W.transpose()
