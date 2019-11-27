@@ -3,7 +3,7 @@
 
  The goal of this project was to develop a HD-SEMG aquisition system to better locate the EMG electrodes on the residual limb to improve prosthesis control.
 
- In the project multiple AFE were designed to amplify and filter the EMG signal. THe EMG channels were digitezed using the ADS1298, the data is read from the ADS1298 via an Arduino DUE (SAM3X8E) and a STM32F4 and a PC application was developed to visualize the data and verifiy certain system specification (CMRR, IRN and Gain).
+ In the project multiple AFE were designed to amplify and filter the EMG signal. THe EMG channels were digitezed using the ADS1298, the data is read from the ADS1298 via an Arduino DUE (SAM3X8E) and a STM32F4 and a PC application was developed to visualize the data and verifiy certain system specification (CMRR, IRN and Gain). The Current design is capable of measring up to 1kSps with the Arduino DUE and to >4kSps with the STM32F411, the problem with the STM32F4 is the the Python application and realterm cannot open the USB (CDC) to read the data, but it can be open in Tera term. If anybody knows why I would be happy to know. 
 
  If you would like to continue this project Idea, feel to contact me for more info about the future improvements or any other questions about the design of the project.
 
