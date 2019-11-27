@@ -1,4 +1,4 @@
-# Graduation internship report attachmetns
+# Graduation internship report attachments (HD-SEMG system ADS1298)
  THis folder includes: Hardware files, software files, python application, MATLAB and report, design was to build a protable and wireless HD-SEMG aquisition system for my graduation internship of my electrical engineering degree at Hogeschool Rotterdam, the internship took place at Bio-engineering.pl in Wroclaw.
 
  The goal of this project was to develop a HD-SEMG aquisition system to better locate the EMG electrodes on the residual limb to improve prosthesis control.
